@@ -2,7 +2,7 @@
 // It shows the saved copy straight away and fetches a newer one in the background,
 // so an update appears the next time the app is opened.
 // The cache only holds the app's own files. Bowling data is never stored here.
-const CACHE = "strikerx-shell-1.5.3-202611152012";
+const CACHE = "strikerx-shell-1.5.4-202611160124";
 const SHELL = ["./", "index.html", "unlock.js", "app.enc", "manifest.webmanifest", "icon-180.png", "icon-192.png", "icon-512.png"];
 
 self.addEventListener("install", (event) => {
