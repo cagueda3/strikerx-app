@@ -8,7 +8,8 @@
   var KEY_NAME = "strikerx-lock-key";
 
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("sw.js").catch(function () {});
+    // updateViaCache "none": always ask the server whether sw.js changed, never reuse a stored copy.
+    navigator.serviceWorker.register("sw.js", { updateViaCache: "none" }).catch(function () {});
   }
 
   function fromB64(s) {
